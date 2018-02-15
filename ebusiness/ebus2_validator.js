@@ -4,7 +4,7 @@ function validateDetails(){
     
     var pin;
     
-    pin = document.getElementsById("user_pin").value;
+    pin = document.getElementById("user_pin").value;
     
     if (pin == ""){
         alert("Please enter your PIN");
