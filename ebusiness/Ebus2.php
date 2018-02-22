@@ -10,6 +10,7 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="ebus2_validator.js"></script>
     </head>
     <body>
         <h4>Please enter your payment details</h4>
@@ -19,7 +20,7 @@ session_start();
                 
                 <label for="user_pin">PINK</label>
                 
-                <input type="password" id="user_pin" placeholder="Card PIN" maxlenght="4">
+                <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
                 
                 <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
                 
@@ -33,6 +34,6 @@ session_start();
             $_SESSION["total"] = $_POST["total"];
             ?>
 
-        <script type="text/javascript" src="ebus2_validator.js"></script>            
+                 
     </body>
 </html>
