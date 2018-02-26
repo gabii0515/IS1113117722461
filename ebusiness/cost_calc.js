@@ -6,6 +6,7 @@ function calcSub(){
     
     if(document.getElementById('salesforce').checked) {
         argSubTotal = 100;
+        
     }
     else if (document.getElementById('aws').checked) {
         argSubTotal = 300;
@@ -19,13 +20,13 @@ function calcSub(){
     }
 
         
-    calcSub1(argSubTotal);
+    calcDisVatTotal(argSubTotal);
 
     }
     
 
 
-function calcSub1(parmSubTotal) {
+function calcDisVatTotal(parmSubTotal) {
     
     var discountAmt = parmSubTotal * 0.05;
     var tempPrice = parmSubTotal - discountAmt
@@ -45,6 +46,7 @@ function display(parm1, parm2, parm3, parm4){
     document.getElementById("vat").value = parm3;
     document.getElementById("total").value = parm4;
     
+    
     enablebtnProceed();
     
 }
@@ -52,9 +54,9 @@ function display(parm1, parm2, parm3, parm4){
 
 
 function enablebtnProceed(){
-    $('#btnproceed').prop('disabled', false);
+    $('#btnproceed').prop('disable', false);
 }
 
 function disablebtnProceed() {
-    $('btnproceed').prop('disabled', true);
+    $('btnproceed').prop('disable', true);
 }

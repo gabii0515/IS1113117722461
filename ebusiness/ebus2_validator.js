@@ -2,7 +2,9 @@
 
 function validateDetails(){
     
-    var pin;
+    var pin, name, surname;
+    
+    name = document.getElementById()
     
     pin = document.getElementById("user_pin").value;
     

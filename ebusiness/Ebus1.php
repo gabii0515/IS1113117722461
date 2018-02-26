@@ -57,7 +57,7 @@
             <br/>
             
             <label for="vat">
-                vat @ 10%
+                Vat @ 10%
                 <input type="text" id="vat" name="vat" value="0.00" readonly/>
             </label>
             
@@ -70,7 +70,7 @@
             
             <br/>
             
-            <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            <button type="submit" id="btnProceed" disable>Add to Shopping Cart</button>
             
             
           </form>
