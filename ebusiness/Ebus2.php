@@ -19,13 +19,14 @@ session_start();
                 
             <input type="text" id="name"  placeholder="Enter full name here" maxlength="10">
             
-            <brk/>
+            <br/>
+            <br/>
             
             <label for="Email">Email</label>
             
             <input type="text" id="email" placeholder="Your email here" maxlength="20">
             
-            <brk/>
+            <br/>
             
         
             <form action="Ebus3.php" method="POST">
