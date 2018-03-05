@@ -2,14 +2,16 @@
 
 function validateDetails(){
     
-    var pin, name, surname;
+    var pin, name, email;
     
-    name = document.getElementById()
+    name = document.getElementById("name").value;
     
     pin = document.getElementById("user_pin").value;
     
-    if (pin == ""){
-        alert("Please enter your PIN");
+    email = document.getElementById("email").value;
+    
+    if (pin == ""  || name == "" || email == ""){
+        alert("Please enter full details");
     }
     else if (String(pin).length < 4){
         alert("Please make sure your PIN is accurate");
@@ -24,5 +26,5 @@ function validateDetails(){
     }
     
     function disablebtnPurchase(){
-        $('btnPurchase').prop('disabled', true);
+        $('#btnPurchase').prop('disabled', true);
     }

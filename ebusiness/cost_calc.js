@@ -29,15 +29,13 @@ function calcSub(){
 function calcDisVatTotal(parmSubTotal) {
     
     var discountAmt = parmSubTotal * 0.05;
-    var tempPrice = parmSubTotal - discountAmt
+    var tempPrice = parmSubTotal - discountAmt;
     var vatAmt = tempPrice * 0.10;
     var totalPrice = tempPrice + vatAmt;
     
     display(parmSubTotal, discountAmt, vatAmt, totalPrice);
     
 }
-
-
 
 function display(parm1, parm2, parm3, parm4){
     
@@ -46,17 +44,15 @@ function display(parm1, parm2, parm3, parm4){
     document.getElementById("vat").value = parm3;
     document.getElementById("total").value = parm4;
     
-    
     enablebtnProceed();
-    
-}
-
+}//End of display()
 
 
 function enablebtnProceed(){
-    $('#btnproceed').prop('disable', false);
-}
+    $('#btnproceed').prop('disabled', false);
+}//End of enablebtnProceed()
+
 
 function disablebtnProceed() {
-    $('btnproceed').prop('disable', true);
-}
+    $('#btnproceed').prop('disabled', true);
+}//End of disablebtnProcees()
