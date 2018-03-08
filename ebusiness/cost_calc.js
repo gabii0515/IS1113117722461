@@ -1,5 +1,6 @@
 /* global $ */
 
+/*Functions for the calculations of Ebus */
 function calcSub(){
     
     var argSubTotal;
@@ -19,13 +20,10 @@ function calcSub(){
         
     }
 
-        
     calcDisVatTotal(argSubTotal);
 
     }
     
-
-
 function calcDisVatTotal(parmSubTotal) {
     
     var discountAmt = parmSubTotal * 0.05;
@@ -35,8 +33,9 @@ function calcDisVatTotal(parmSubTotal) {
     
     display(parmSubTotal, discountAmt, vatAmt, totalPrice);
     
-}
-
+    }
+    
+/* Function for the display*/
 function display(parm1, parm2, parm3, parm4){
     
     document.getElementById("subtotal").value = parm1;
@@ -45,14 +44,14 @@ function display(parm1, parm2, parm3, parm4){
     document.getElementById("total").value = parm4;
     
     enablebtnProceed();
-}//End of display()
+    }
 
-
+/* Function for Proceed button */
 function enablebtnProceed(){
     $('#btnproceed').prop('disabled', false);
-}//End of enablebtnProceed()
+    }
 
 
 function disablebtnProceed() {
     $('#btnproceed').prop('disabled', true);
-}//End of disablebtnProcees()
+    }

@@ -1,5 +1,6 @@
 /* global $ */
 
+/* Function for detail entry */
 function validateDetails(){
     
     var pin, name, email;
@@ -10,6 +11,7 @@ function validateDetails(){
     
     email = document.getElementById("email").value;
     
+    /* Error handling */
     if (pin == ""  || name == "" || email == ""){
         alert("Please enter full details");
     }
@@ -21,6 +23,7 @@ function validateDetails(){
     }
 }
 
+    /* Purchase Button */
     function enablebtnPurchase(){
         $('#btnPurchase').prop('disabled', false);
     }

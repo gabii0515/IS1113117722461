@@ -1,106 +1,114 @@
 <!DOCTYPE html>
- <html>
-     <head>
-            <title>Sports</title>
-            <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
+<html>
+    <head>
+        
+        <!-- link the interests page to mystylesheets.css-->
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
 
-            
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+    </head>
 
-     <body>
+    <body>
          
-          <center>
+        <!--The interests navigation bar-->
+        <center>
         <div class="navbar">
             <nav>
-                 <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="CVs/cv_page1.html">Curriculum Vitae </a></li>
-                    <li><a href="../interests/sports.html">Interests</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="ebusiness/Ebus1.php">Ebus</a></li>
+                <ul>
+                    <li><a class="active" href="../homepage.html">Home</a></li>
+                    <li><a href="../CVs/cv_page1.html">Curriculum Vitae </a></li>
+                    <li><a href="interests/sports.html">Interests</a></li>
+                    <li><a href="../ebusiness/Ebus1.php">Ebus</a></li>
                 </ul>
             </nav>
-                
         </div>
         </center>
         
-         <div class="pimg1">
+        <!--first image and the text on it-->
+        <div class="pimg1">
             <div class="ptext">
                 <span class="border">
                     Interests
                 </span>
             </div>
-            
         </div>
         
+        <!--The light section-->
         <section class="section section-light">
-            <h2>Personal Details</h2>
-         <p><strong>Name:</strong> Gabriele Gudauskyte</p>
-         <p><strong>Address:</strong> ** ************
-         <p><strong>Phone:</strong> 087*******</p>
-         <p><strong>Email:</strong> *********@umail.ucc.ie</p>
-        </section>
-        
-    <div class="pimg2">
-            <div class="ptext">
-               
-            </div>
-            
+            <h2>Sports and Travel</h2>
+         
+        <!--The slideshow container and the images in it-->
+        <div class="slideshow-container">
+
+        <div class="mySlides fade1">
+        <div class="numbertext">1 / 5</div>
+        <img src="../images/snowboard.jpeg" style="width:100%">
+        <div class="text">Snowboarding</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="../images/basketball.jpeg" style="width:100%">
+        <div class="text">Basketball</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="../images/Kickboxing.jpg" style="width:100%">
+        <div class="text">Kickboxing</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="../images/canada.jpeg" style="width:100%">
+        <div class="text">Canada</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="../images/brazil.jpeg" style="width:100%">
+        <div class="text">Brazil</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         
-    <section class="section section-dark">
-         <h2>Educational Details</h2>  
-         
-         <p><strong>College:</strong> UCC</p>
-         <p><strong>Course:</strong> BIS</p>
-         <p><strong>Year:</strong> 2017-2021</p>
-         <br/>
-         <p><strong>College:</strong> St. Johns</p>
-         <p><strong>Course:</strong> Game Development Design</p>
-         <p><strong>Year:</strong> 2015-2017</p>
-         <p><stron>Award:</stron> Dimploma</p>
-         <br/>
-         <p><strong>School:</strong> Kinsale Community School</p>
-         <p><strong>Year:</strong> 2005-2009</p>
-         <br/>
-         <p><strong>School:</strong> Gedminu Pagrindine School</p>
-         <p><strong>Year:</strong> 1998-2009</p>
-         </section>
-         
-        
-        
-    <div class="pimg3">
-            <div class="ptext">
-               
-            </div>
-            
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-    
-    <section class="section section-dark">
-         <h2>Work Details</h2>
-         <p><strong>Company:</strong>Table Restaurant</p>
-         <p><strong>Position:</strong>Waitress</p>
-         <p><strong>Work period:</strong>2017-present</p>
-     
-         <br/> 
-             
-         <p><strong>Company:</strong>Wagamama Cork</p>
-         <p><strong>Position:</strong>Waitress</p>
-         <p><strong>Work period:</strong>2013-2016</p>
-        </section>
-        
-    <div class="pimg1">
-            <div class="ptext">
-            </div>
-            
-        </div>
-            
-     
          
-            
-     </body>
-     
+         <!--The functions for the slideshow-->
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </body>
 </html>
